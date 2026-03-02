@@ -38,7 +38,7 @@
     },
     {
       "label": "Python poetry",
-      "ring": 2,
+      "ring": 3,
       "active": false,
       "moved": 0
     },
