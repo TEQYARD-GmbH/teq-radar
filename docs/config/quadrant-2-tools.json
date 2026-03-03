@@ -19,6 +19,18 @@
       "moved": 0
     },
     {
+      "label": "IntelliJ IDEA",
+      "ring": 0,
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "DBeaver",
+      "ring": 0,
+      "active": true,
+      "moved": 0
+    },
+    {
       "label": "git",
       "ring": 0,
       "active": true,
@@ -45,6 +57,48 @@
     {
       "label": "Python ty",
       "ring": 1,
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Maven",
+      "ring": 0,
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Project Lombok",
+      "ring": 0,
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Flyway",
+      "ring": 0,
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "postgreSQL",
+      "ring": 0,
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "OpenSearch",
+      "ring": 0,
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "lockalstack",
+      "ring": 0,
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Keycloak",
+      "ring": 0,
       "active": true,
       "moved": 0
     }
