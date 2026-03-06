@@ -33,6 +33,12 @@
       "link": "https://fastapi.tiangolo.com/"
     },
     {
+      "label": "Java Spring Boot",
+      "ring": 0,
+      "active": true,
+      "moved": 0
+    },
+    {
       "label": "Python Pydantic",
       "ring": 0,
       "active": true,
