@@ -39,11 +39,35 @@
       "moved": 0
     },
     {
+      "label": "Java Spring Cloud Gateway",
+      "ring": 0,
+      "active": true,
+      "moved": 0
+    },
+    {
       "label": "Python Pydantic",
       "ring": 0,
       "active": true,
       "moved": 0,
       "link": "https://docs.pydantic.dev/latest/"
+    },
+    {
+      "label": "Typescript",
+      "ring": 0,
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "React",
+      "ring": 0,
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Vite",
+      "ring": 0,
+      "active": true,
+      "moved": 0
     }
   ]
 }
