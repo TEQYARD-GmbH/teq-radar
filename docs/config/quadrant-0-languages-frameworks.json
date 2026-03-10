@@ -68,6 +68,12 @@
       "ring": 0,
       "active": true,
       "moved": 0
+    },
+    {
+      "label": "Terraform",
+      "ring": 0,
+      "active": true,
+      "moved": 0
     }
   ]
 }
