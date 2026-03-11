@@ -42,7 +42,7 @@
       "label": "Java Spring Cloud Gateway",
       "ring": 0,
       "active": true,
-      "moved": 0
+      "moved": 2
     },
     {
       "label": "Python Pydantic",
