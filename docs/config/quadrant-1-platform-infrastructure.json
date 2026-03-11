@@ -13,6 +13,24 @@
       "moved": 0
     },
     {
+      "label": "Amazon Web Services - S3",
+      "ring": 0,
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "StackIT Kubernetes Engine",
+      "ring": 0,
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "StackIT Object Storage",
+      "ring": 0,
+      "active": true,
+      "moved": 0
+    },
+    {
       "label": "GitHub",
       "ring": 0,
       "active": true,
