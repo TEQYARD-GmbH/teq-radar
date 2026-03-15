@@ -91,6 +91,12 @@
       "moved": 0
     },
     {
+      "label": "ElasticSearch",
+      "ring": 0,
+      "active": true,
+      "moved": 0
+    },
+    {
       "label": "localstack",
       "ring": 0,
       "active": true,
@@ -98,6 +104,12 @@
     },
     {
       "label": "Keycloak",
+      "ring": 0,
+      "active": true,
+      "moved": 0
+    },
+    {
+      "label": "Swagger",
       "ring": 0,
       "active": true,
       "moved": 0
