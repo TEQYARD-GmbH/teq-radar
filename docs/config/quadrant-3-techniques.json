@@ -17,6 +17,19 @@
       "ring": 0,
       "active": true,
       "moved": 0
+    },
+    {
+      "label": "Semantic Release",
+      "ring": 0,
+      "active": true,
+      "moved": 1,
+      "link": "https://semantic-release.gitbook.io/"
+    },
+    {
+      "label": "SBOM",
+      "ring": 1,
+      "active": true,
+      "moved": 1
     }
   ]
 }

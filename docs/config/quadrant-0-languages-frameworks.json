@@ -42,7 +42,7 @@
       "label": "Java Spring Cloud Gateway",
       "ring": 0,
       "active": true,
-      "moved": 2
+      "moved": 0
     },
     {
       "label": "Python Pydantic",
@@ -79,13 +79,34 @@
       "label": "Expo",
       "ring": 0,
       "active": true,
-      "moved": 2
+      "moved": 0
     },
     {
       "label": "Hyperledger Fabrics",
       "ring": 1,
       "active": true,
-      "moved": 3
+      "moved": 0
+    },
+    {
+      "label": "Next.js",
+      "ring": 1,
+      "active": true,
+      "moved": 1,
+      "link": "https://nextjs.org/"
+    },
+    {
+      "label": "Java Spring AI",
+      "ring": 2,
+      "active": true,
+      "moved": 1,
+      "link": "https://spring.io/projects/spring-ai"
+    },
+    {
+      "label": "Python OpenAI Agents SDK",
+      "ring": 2,
+      "active": true,
+      "moved": 1,
+      "link": "https://openai.github.io/openai-agents-python/"
     }
   ]
 }
