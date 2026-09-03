@@ -113,6 +113,47 @@
       "ring": 0,
       "active": true,
       "moved": 0
+    },
+    {
+      "label": "ArgoCD",
+      "ring": 0,
+      "active": true,
+      "moved": 1,
+      "link": "https://argo-cd.readthedocs.io/"
+    },
+    {
+      "label": "SonarQube",
+      "ring": 0,
+      "active": true,
+      "moved": 1,
+      "link": "https://www.sonarsource.com/products/sonarcloud/"
+    },
+    {
+      "label": "Trivy",
+      "ring": 1,
+      "active": true,
+      "moved": 1,
+      "link": "https://trivy.dev/"
+    },
+    {
+      "label": "Testcontainers",
+      "ring": 1,
+      "active": true,
+      "moved": 1,
+      "link": "https://testcontainers.com/"
+    },
+    {
+      "label": "pgvector",
+      "ring": 1,
+      "active": true,
+      "moved": 1,
+      "link": "https://github.com/pgvector/pgvector"
+    },
+    {
+      "label": "RabbitMQ",
+      "ring": 2,
+      "active": true,
+      "moved": 1
     }
   ]
 }
