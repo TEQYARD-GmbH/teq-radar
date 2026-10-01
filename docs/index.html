@@ -6,7 +6,7 @@
 <meta name="description" content="TEQ Radar: a tool to visualize technology choices, inspire and support Engineering teams at TEQYARD to pick the best technologies for new projects">
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>TEQ Radar</title>
-<!--<link rel="shortcut icon" href="https://www.zalando.de/favicon.ico">-->
+<link rel="icon" type="image/svg+xml" href="logo-short.svg">
 
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <script src="radar.js"></script>
@@ -16,7 +16,21 @@
 
 <body>
 
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="site-header__brand" href="./">
+      <svg class="site-header__logo" role="img" aria-label="TEQYARD" width='197' height='24' viewBox='0 0 197 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M70.802 18.9031C69.461 19.7409 67.8519 20.2645 66.1355 20.2645C61.3617 20.2645 57.4997 16.4944 57.4997 11.8341C57.4997 7.17374 61.3617 3.4036 66.1355 3.4036C70.9093 3.4036 74.7712 7.17374 74.7712 11.8341C74.7712 13.5097 74.2885 15.0282 73.4303 16.3373L75.8976 18.746C77.3458 16.8085 78.204 14.3999 78.204 11.7817C78.204 5.28867 72.7866 0 66.1355 0C59.4843 0 54.0669 5.28867 54.0669 11.7817C54.0669 18.2747 59.4843 23.5634 66.1355 23.5634C68.8174 23.5634 71.2847 22.7256 73.323 21.2594L70.802 18.9031Z' fill='#F95759'/><path d='M75.8728 18.8165L73.2944 21.335L76.026 24.0001L78.6043 21.4816L75.8728 18.8165Z' fill='#F95759'/><path d='M28.75 23.4587H46.7188C47.1479 23.4587 47.3625 23.2492 47.3625 22.8303V21.1023C47.3625 20.6834 47.1479 20.474 46.7188 20.474H31.271V13.562H41.7841C42.2132 13.562 42.4278 13.3526 42.4278 12.9337V11.3104C42.4278 10.8915 42.2132 10.6821 41.7841 10.6821H31.271V4.24141H46.7188C47.1479 4.24141 47.3625 4.03196 47.3625 3.61305V1.88507C47.3625 1.46616 47.1479 1.25671 46.7188 1.25671H28.75C28.3209 1.25671 28.1064 1.46616 28.1064 1.88507V22.8827C28.1064 23.2492 28.3209 23.4587 28.75 23.4587ZM9.06484 23.4587H10.9958C11.4249 23.4587 11.6395 23.2492 11.6395 22.8303V4.18905H19.417C19.8461 4.18905 20.0607 3.97959 20.0607 3.56069V1.83271C20.0607 1.4138 19.8461 1.20435 19.417 1.20435H0.643657C0.214552 1.20435 0 1.4138 0 1.83271V3.56069C0 3.97959 0.214552 4.18905 0.643657 4.18905H8.42118V22.8303C8.42118 23.2492 8.63574 23.4587 9.06484 23.4587Z' fill='#F95759'/><path d='M177.435 20.5262V4.24129H188.538C192.078 4.24129 193.312 5.34091 193.312 9.58232V15.2375C193.312 19.479 192.025 20.5262 188.538 20.5262H177.435ZM174.914 23.4585H188.806C194.331 23.4585 196.423 20.9451 196.423 15.2375V9.58232C196.423 3.82238 194.331 1.25659 188.806 1.25659H174.914C174.485 1.25659 174.27 1.46604 174.27 1.88495V22.8826C174.27 23.2491 174.539 23.4585 174.914 23.4585ZM162.202 9.26815C162.202 13.0907 160.7 13.8761 156.141 13.8761H147.183V4.18893H156.141C160.7 4.18893 162.202 5.02674 162.202 8.90161V9.26815ZM165.42 9.32051V8.95397C165.42 3.71766 163.167 1.25659 156.409 1.25659H144.716C144.287 1.25659 144.072 1.46604 144.072 1.88495V22.8826C144.072 23.3015 144.287 23.5109 144.716 23.5109H146.593C147.022 23.5109 147.237 23.3015 147.237 22.8826V16.9132H156.945L161.29 23.1444C161.505 23.4062 161.719 23.5633 162.041 23.5633H164.294C164.83 23.5633 164.991 23.1967 164.723 22.8302L160.325 16.6513C164.133 15.7612 165.42 13.3525 165.42 9.32051ZM117.092 16.599L123.314 4.55547L129.483 16.599H117.092ZM133.506 23.4585H135.651C136.134 23.4585 136.348 23.1444 136.134 22.7255L125.138 1.6755C124.977 1.36132 124.762 1.25659 124.387 1.25659H122.134C121.759 1.25659 121.544 1.36132 121.383 1.6755L110.334 22.7255C110.119 23.1444 110.334 23.4585 110.817 23.4585H112.962C113.338 23.4585 113.552 23.3538 113.713 23.0396L115.698 19.2695H130.824L132.755 23.0396C132.915 23.3015 133.13 23.4585 133.506 23.4585ZM95.2615 23.4585H97.1925C97.6216 23.4585 97.8362 23.2491 97.8362 22.8302V17.3844L108.349 1.98967C108.617 1.57077 108.457 1.25659 107.92 1.25659H105.721C105.399 1.25659 105.131 1.36132 104.916 1.6755L96.227 14.5045L87.4304 1.6755C87.2158 1.41368 87.0013 1.25659 86.6794 1.25659H84.4266C83.8902 1.25659 83.7293 1.62313 83.9975 1.98967L94.6715 17.3844V22.8302C94.6179 23.2491 94.8861 23.4585 95.2615 23.4585Z' fill='white'/></svg>
+      <span class="site-header__title">TEQ Radar</span>
+    </a>
+    <span class="site-header__date" id="radar-date"></span>
+  </div>
+</header>
+
+<main>
+<div class="radar-card">
 <svg id="radar"></svg>
+</div>
+
 
 <script>
 // Load metadata and all quadrant configs
@@ -36,9 +50,17 @@ Promise.all([
   ];
 
   radar_visualization({
-    repo_url: "https://github.com/teqyard/teq-radar",
-    title: "TEQ Radar",
-    date: metadata.date,
+    repo_url: "https://github.com/TEQYARD-GmbH/teq-radar",
+    // title and date are rendered in the page header (HTML), not inside the SVG
+    title: "",
+    date: "",
+    font_family: "Carlito, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial, sans-serif",
+    heading_font_family: "'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', Arial, sans-serif",
+    colors: {
+      background: "#ffffff",  // color/background/default
+      grid: "#d0d2d5",        // color/border/subtle
+      inactive: "#d0d2d5"
+    },
     quadrants: [
       { name: "Languages & Frameworks" },
       { name: "Platform & Infrastructure" },
@@ -46,21 +68,27 @@ Promise.all([
       { name: "Techniques" },
     ],
     rings: [
-      { name: "IN USE", color: "#5ba300" },
-      { name: "TRIAL", color: "#009eb0" },
-      { name: "ASSESS", color: "#c7ba00" },
-      { name: "PHASE OUT", color: "#e09b96" }
+      { name: "IN USE", color: "#307f35" }, // accent/success/10,
+      { name: "TRIAL", color: "#4766d2" }, // accent/tertiary/9,
+      { name: "ASSESS", color: "#b06912" }, // accent/caution/10,
+      { name: "PHASE OUT", color: "#e20000" }, // accent/danger/9
     ],
     entries: entries
   });
+
+  // make the fixed-size radar scale with the container
+  var svg = document.getElementById('radar');
+  svg.setAttribute('viewBox', '0 0 ' + svg.getAttribute('width') + ' ' + svg.getAttribute('height'));
+  svg.removeAttribute('width');
+  svg.removeAttribute('height');
+  document.getElementById('radar-date').textContent = metadata.date;
 }).catch(function(err) {
   console.log('Error loading config files', err);
 });
 </script>
 
-<table>
-<tr>
-<td>
+<section class="info">
+<div class="info__col">
 
 <h3>What is the TEQ Radar?</h3>
 
@@ -75,7 +103,8 @@ The TEQ Radar is a list of technologies, complemented by an assessment result, c
 <li><strong>PHASE OUT</strong> &mdash; Technologies not recommended to be used for new projects. Technologies that we think are not worth to (further) invest in. PHASE OUT technologies should not be used for new projects, but usually can be continued for existing projects.</li>
 </ul>
 
-</td><td>
+</div>
+<div class="info__col">
 
 <h3>What is the purpose?</h3>
 
@@ -90,8 +119,13 @@ The Tech Radar is maintained by our <em>Principal Engineers</em> &mdash; who fac
 </p>
 
 
-</td></tr>
-</table>
+</div>
+</section>
+</main>
+
+<footer class="site-footer">
+  Maintained in <a href="https://github.com/TEQYARD-GmbH/teq-radar">GitHub</a> &mdash; radar entries live in <code>docs/config/quadrant-*.json</code>, see <code>CONFIG-STRUCTURE.md</code>.
+</footer>
 
 </body>
 </html>

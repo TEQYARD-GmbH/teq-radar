@@ -1,25 +1,219 @@
+/* TEQ Radar – HiTEQ design (tokens from the HiTEQ design system, theme TEQYARD) */
+
+@font-face {
+  font-family: 'Carlito';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('fonts/carlito-latin-400-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Carlito';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('fonts/carlito-latin-700-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url('fonts/source-sans-3-latin-600-normal.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Source Sans 3';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('fonts/source-sans-3-latin-700-normal.woff2') format('woff2');
+}
+
+:root {
+  --color-background-brand-primary: #16223a;
+  --color-background-default: #ffffff;
+  --color-background-surface: #f1f1f2;
+  --color-content-default: #1c1d1f;
+  --color-content-subtle: #7a7e87;
+  --color-content-invert: #ffffff;
+  --color-border-subtle: #d0d2d5;
+  --color-link: #4766d2;
+  --color-link-hover: #91a4e7;
+  --color-link-active: #334793;
+  --color-focus-ring: #16223a;
+  --color-focus-ring-knockout: #ffffff;
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", Arial, sans-serif;
+  --font-body: 'Carlito', var(--font-sans);
+  --font-heading: 'Source Sans 3', var(--font-sans);
+
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+
+  --layout-margin: 16px;
+  --layout-gutter: 16px;
+}
+
+@media (min-width: 560px) {
+  :root {
+    --layout-margin: 24px;
+    --layout-gutter: 24px;
+  }
+}
+
+@media (min-width: 960px) {
+  :root {
+    --layout-margin: 128px;
+    --layout-gutter: 32px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Source Sans Pro', arial, helvetica, sans-serif;
-  padding-bottom: 50px;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-content-default);
+  background: var(--color-background-surface);
 }
-h3 {
-  margin-top: 50px;
+
+a {
+  color: var(--color-link);
 }
-li {
-  margin: 25px 50px 0 0;
+a:hover {
+  color: var(--color-link-hover);
 }
-table {
-  width: 1400px;
-  margin: 0 50px 0 50px;
+a:active {
+  color: var(--color-link-active);
 }
-td {
-  width: 50%;
-  vertical-align: top;
-  padding-right: 60px;
+a:focus-visible {
+  outline: 2px solid var(--color-focus-ring);
+  outline-offset: 2px;
 }
+
+.site-header {
+  background: var(--color-background-brand-primary);
+  color: var(--color-content-invert);
+  padding: var(--spacing-lg) var(--layout-margin);
+}
+.site-header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--layout-gutter);
+}
+.site-header__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--layout-gutter);
+  color: var(--color-content-invert);
+  text-decoration: none;
+}
+.site-header__brand:hover,
+.site-header__brand:active {
+  color: var(--color-content-invert);
+}
+.site-header__brand:focus-visible {
+  outline-color: var(--color-focus-ring-knockout);
+}
+.site-header__logo {
+  display: block;
+  height: 24px;
+  width: auto;
+}
+.site-header__title {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  padding-left: var(--layout-gutter);
+  border-left: 1px solid var(--color-content-invert);
+}
+.site-header__date {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+main {
+  flex: 1;
+  padding: var(--spacing-xl) var(--layout-margin);
+}
+
+.radar-card {
+  background: var(--color-background-default);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: 0;
+  overflow-x: auto;
+}
+#radar {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-width: 900px;
+}
+
+.site-footer {
+  padding: var(--spacing-lg) var(--layout-margin) var(--spacing-xl);
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-content-default);
+}
+.site-footer code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
 .hover-underline {
   text-decoration: none;
 }
 .hover-underline:hover {
   text-decoration: underline;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--layout-gutter);
+  margin-top: var(--spacing-xl);
+  padding: var(--spacing-xl);
+  background: var(--color-background-default);
+  border: 1px solid var(--color-border-subtle);
+  border-radius: 0;
+}
+@media (min-width: 960px) {
+  .info {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--layout-gutter);
+  }
+}
+.info h3 {
+  margin: 0 0 var(--spacing-lg);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+.info h3:not(:first-child) {
+  margin-top: var(--spacing-xl);
+}
+.info p {
+  margin: 0 0 var(--spacing-lg);
+}
+.info ul {
+  margin: 0;
+  padding-left: var(--spacing-xl);
+}
+.info li {
+  margin: 0 0 var(--spacing-lg);
 }
