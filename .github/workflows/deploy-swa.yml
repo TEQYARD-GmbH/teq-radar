@@ -1,0 +1,54 @@
+name: Deploy TEQ Radar to Azure Static Web Apps
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: |
+          if [ -f package.json ]; then
+            echo "package.json found — installing dependencies"
+            if command -v yarn >/dev/null 2>&1; then
+              yarn --frozen-lockfile || npm install
+            else
+              npm ci || npm install
+            fi
+          else
+            echo "No package.json found — skipping dependency install"
+          fi
+
+      - name: Build (if applicable)
+        run: |
+          if [ -f package.json ] && grep -q '"build"' package.json; then
+            echo "Build script detected — running build"
+            if command -v yarn >/dev/null 2>&1; then
+              yarn build
+            else
+              npm run build
+            fi
+          else
+            echo "No build script defined — skipping build step"
+          fi
+
+      - name: Deploy to Azure Static Web Apps
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used by the action
+          action: "upload"
+          app_location: "docs"
+          api_location: ""
+          output_location: ""

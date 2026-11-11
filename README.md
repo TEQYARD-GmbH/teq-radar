@@ -85,6 +85,12 @@ Radar](http://zalando.github.io/tech-radar/).
 
 Tech Radar is a static page, so it can be deployed using any hosting provider of your choice offering static page hosting.
 
+### TEQYARD deployment
+
+- **Live:** https://wonderful-coast-08f381503.6.azurestaticapps.net (Azure Static Web Apps)
+- **Automatic deploy:** every push (i.e. every merged PR) to `main` triggers the GitHub Actions workflow [`deploy-swa.yml`](.github/workflows/deploy-swa.yml), which publishes the `docs` folder. Runs: [Actions](https://github.com/TEQYARD-GmbH/teq-radar/actions/workflows/deploy-swa.yml).
+- Infrastructure (Terraform) and manual deployment: see [DEPLOYMENT.md](DEPLOYMENT.md).
+
 ## Local Development
 
 1. install dependencies with yarn (or npm):
