@@ -167,6 +167,41 @@
       "active": true,
       "moved": 0,
       "link": "https://openai.github.io/openai-agents-python/"
+    },
+    {
+      "label": "Java",
+      "ring": 0,
+      "active": true,
+      "moved": 2,
+      "link": "https://www.java.com/"
+    },
+    {
+      "label": "Zod",
+      "ring": 0,
+      "active": true,
+      "moved": 2,
+      "link": "https://zod.dev/"
+    },
+    {
+      "label": "React Hook Form",
+      "ring": 0,
+      "active": true,
+      "moved": 2,
+      "link": "https://react-hook-form.com/"
+    },
+    {
+      "label": "i18next",
+      "ring": 0,
+      "active": true,
+      "moved": 2,
+      "link": "https://www.i18next.com/"
+    },
+    {
+      "label": "Keycloakify",
+      "ring": 0,
+      "active": true,
+      "moved": 2,
+      "link": "https://www.keycloakify.dev/"
     }
   ]
 }
