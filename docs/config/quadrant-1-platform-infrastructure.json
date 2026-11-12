@@ -92,6 +92,20 @@
       "active": true,
       "moved": 2,
       "link": "https://kafka.apache.org/"
+    },
+    {
+      "label": "Garage",
+      "ring": 0,
+      "active": true,
+      "moved": 2,
+      "link": "https://garagehq.deuxfleurs.fr/"
+    },
+    {
+      "label": "HashiCorp Vault",
+      "ring": 0,
+      "active": true,
+      "moved": 2,
+      "link": "https://www.vaultproject.io/"
     }
   ]
 }

@@ -255,6 +255,27 @@
       "ring": 3,
       "active": false,
       "moved": 0
+    },
+    {
+      "label": "Jupyter",
+      "ring": 0,
+      "active": true,
+      "moved": 2,
+      "link": "https://jupyter.org/"
+    },
+    {
+      "label": "MkDocs",
+      "ring": 0,
+      "active": true,
+      "moved": 2,
+      "link": "https://www.mkdocs.org/"
+    },
+    {
+      "label": "Gradle",
+      "ring": 0,
+      "active": true,
+      "moved": 2,
+      "link": "https://gradle.org/"
     }
   ]
 }
