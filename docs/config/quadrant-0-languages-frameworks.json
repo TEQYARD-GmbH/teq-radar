@@ -202,6 +202,13 @@
       "active": true,
       "moved": 2,
       "link": "https://www.keycloakify.dev/"
+    },
+    {
+      "label": "React Router",
+      "ring": 0,
+      "active": true,
+      "moved": 2,
+      "link": "https://reactrouter.com/"
     }
   ]
 }

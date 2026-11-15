@@ -276,6 +276,55 @@
       "active": true,
       "moved": 2,
       "link": "https://gradle.org/"
+    },
+    {
+      "label": "Alembic",
+      "ring": 0,
+      "active": true,
+      "moved": 2,
+      "link": "https://alembic.sqlalchemy.org/"
+    },
+    {
+      "label": "Jest",
+      "ring": 0,
+      "active": true,
+      "moved": 2,
+      "link": "https://jestjs.io/"
+    },
+    {
+      "label": "pnpm",
+      "ring": 0,
+      "active": true,
+      "moved": 2,
+      "link": "https://pnpm.io/"
+    },
+    {
+      "label": "oxlint",
+      "ring": 0,
+      "active": true,
+      "moved": 2,
+      "link": "https://oxc.rs/docs/guide/usage/linter.html"
+    },
+    {
+      "label": "Redis",
+      "ring": 0,
+      "active": true,
+      "moved": 2,
+      "link": "https://redis.io/"
+    },
+    {
+      "label": "PostGIS",
+      "ring": 0,
+      "active": true,
+      "moved": 2,
+      "link": "https://postgis.net/"
+    },
+    {
+      "label": "Helm",
+      "ring": 0,
+      "active": true,
+      "moved": 2,
+      "link": "https://helm.sh/"
     }
   ]
 }
