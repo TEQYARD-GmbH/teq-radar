@@ -106,6 +106,20 @@
       "active": true,
       "moved": 2,
       "link": "https://www.vaultproject.io/"
+    },
+    {
+      "label": "OAuth2 Proxy",
+      "ring": 0,
+      "active": true,
+      "moved": 2,
+      "link": "https://oauth2-proxy.github.io/oauth2-proxy/"
+    },
+    {
+      "label": "Google Cloud",
+      "ring": 0,
+      "active": true,
+      "moved": 2,
+      "link": "https://cloud.google.com/"
     }
   ]
 }
